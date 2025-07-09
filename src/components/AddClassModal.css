@@ -1,0 +1,173 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-box {
+  background: #f9f8f6;
+  border-radius: 12px;
+  padding: 28px 24px 22px 24px;
+  width: 900px;
+  max-width: 95vw;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.modal-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.close-btn {
+  background: none;
+  font-size: 24px;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  margin-bottom: 24px;
+  color: #444;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #888;
+  font-weight: 500;
+}
+
+.step.active {
+  color: #222;
+  font-weight: 600;
+}
+
+.step.active .step-circle {
+  background: #2056a8;
+  color: #fff;
+}
+
+.step-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #e0e7f3;
+  color: #2056a8;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.step-arrow {
+  margin: 0 14px;
+  color: #bdbdbd;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.curriculum-table {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.table-header, .table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+}
+
+.table-header {
+  font-weight: 600;
+  font-size: 14px;
+  color: #444;
+}
+
+.table-row {
+  position: relative;
+}
+
+.table-row select {
+  width: 100%;
+  padding: 10px 38px 10px 14px;
+  border: 1.5px solid #cfc2b0;
+  border-radius: 8px;
+  background: #f8f2e6;
+  font-size: 16px;
+  color: #6b6552;
+  font-family: inherit;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  appearance: none;
+  outline: none;
+  transition: border 0.2s;
+  background-image: none;
+}
+
+.table-row select:focus {
+  border-color: #b8a47a;
+}
+
+/* Custom arrow icon */
+.select-arrow {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #b8a47a;
+  font-size: 20px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.back-btn, .clear-btn, .save-btn {
+  padding: 8px 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.back-btn {
+  background: #e2e2e2;
+}
+
+.clear-btn {
+  background: #fff;
+  border: 1px solid #aaa;
+  color: #666;
+}
+
+.save-btn {
+  background: #1a73e8;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.save-btn:hover {
+  background: #145ec2;
+}
