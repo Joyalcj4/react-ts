@@ -6,6 +6,12 @@
   align-items: center;
   justify-content: center;
 }
+.line{
+  height: 1px;
+  background-color: gray;
+  margin-bottom: 15px;
+  width: full;
+}
 
 .modal-box {
   background: #f9f8f6;
@@ -25,6 +31,7 @@
 .modal-header h2 {
   font-size: 22px;
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 .close-btn {
@@ -107,9 +114,9 @@
 .table-row select {
   width: 100%;
   padding: 10px 38px 10px 14px;
-  border: 1.5px solid #cfc2b0;
+  border: 1.5px solid gray;
   border-radius: 8px;
-  background: #f8f2e6;
+  background: white;
   font-size: 16px;
   color: #6b6552;
   font-family: inherit;
@@ -121,7 +128,7 @@
 }
 
 .table-row select:focus {
-  border-color: #b8a47a;
+  border-color: black;
 }
 
 /* Custom arrow icon */
@@ -137,9 +144,14 @@
 
 .modal-actions {
   display: flex;
-  justify-content: flex-end;
-  gap: 12px;
-  margin-top: 24px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.modal-actions > div {
+  display: flex;
+  gap: 10px;
 }
 
 .back-btn, .clear-btn, .save-btn {
@@ -152,12 +164,14 @@
 }
 
 .back-btn {
-  background: #e2e2e2;
+  background: #fff;
+  border: 1px solid gray;
+  color: #666;
 }
 
 .clear-btn {
   background: #fff;
-  border: 1px solid #aaa;
+  border: 1px solid gray;
   color: #666;
 }
 
