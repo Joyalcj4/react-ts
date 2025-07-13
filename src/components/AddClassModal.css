@@ -14,7 +14,7 @@
 }
 
 .modal-box {
-  background: #f9f8f6;
+  background: white;
   border-radius: 12px;
   padding: 28px 24px 22px 24px;
   width: 900px;
@@ -38,7 +38,7 @@
   background: none;
   font-size: 24px;
   border: none;
-  color: #aaa;
+  color: gray;
   cursor: pointer;
 }
 
@@ -47,25 +47,25 @@
   align-items: center;
   font-size: 17px;
   margin-bottom: 24px;
-  color: #444;
+  color: gray;
 }
 
 .step {
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #888;
+  color: gray;
   font-weight: 500;
 }
 
 .step.active {
-  color: #222;
+  color: black;
   font-weight: 600;
 }
 
 .step.active .step-circle {
   background: #2056a8;
-  color: #fff;
+  color: white;
 }
 
 .step-circle {
@@ -75,15 +75,13 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: #e0e7f3;
-  color: #2056a8;
   font-size: 15px;
   font-weight: 600;
 }
 
 .step-arrow {
   margin: 0 14px;
-  color: #bdbdbd;
+  color: gray;
   font-size: 22px;
   display: flex;
   align-items: center;
@@ -104,7 +102,7 @@
 .table-header {
   font-weight: 600;
   font-size: 14px;
-  color: #444;
+  color: black;
 }
 
 .table-row {
@@ -118,20 +116,15 @@
   border-radius: 8px;
   background: white;
   font-size: 16px;
-  color: #6b6552;
-  font-family: inherit;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  color: gray;
   appearance: none;
   outline: none;
-  transition: border 0.2s;
-  background-image: none;
 }
 
 .table-row select:focus {
   border-color: black;
 }
 
-/* Custom arrow icon */
 .select-arrow {
   position: absolute;
   right: 18px;
